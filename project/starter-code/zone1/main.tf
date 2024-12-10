@@ -3,10 +3,6 @@ locals {
 
    name   = "udacity"
    region = "us-east-2"
-   tags = {
-     Name      = local.name
-     Terraform = "true"
-   }
  }
 
  module "vpc" {
