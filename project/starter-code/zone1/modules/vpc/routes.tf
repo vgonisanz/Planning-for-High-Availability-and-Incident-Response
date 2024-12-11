@@ -27,7 +27,7 @@
  }
 
  resource "aws_route" "public_internet_gateway" {
-   count = length(var.azs) > 0 ? length(var.azs) : 0
+   count = 1
 
    route_table_id         = aws_route_table.public[0].id
    destination_cidr_block = "0.0.0.0/0"
