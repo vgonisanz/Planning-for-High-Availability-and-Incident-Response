@@ -22,8 +22,8 @@ aws ec2 describe-availability-zones --region us-west-1 --output table # N. Calif
 | EKS Kubernetes Nodes      | Containers for application orchestration | t3.medium   | 2   | Nodes distributed across multiple availability zones          |
 | VPC                       | Networking for resources                 | N/A         | 1   | Contains IPs distributed across multiple availability zones   |
 | Application Load Balancer | Distribute traffic across instances      | N/A         | 1   | Deployed in each region                                       |
-| SQL Primary Node          | Primary database cluster node            | db.m5.large | 1   | Deployed in zone1, replicates to zone2                        |
-| SQL Secondary Node        | Secondary database cluster node          | db.m5.large | 1   | Deployed in zone2 for high availability and disaster recovery |
+| SQL Primary Node          | Primary database cluster node            | db.t2.small | 1   | Deployed in zone1, replicates to zone2                        |
+| SQL Secondary Node        | Secondary database cluster node          | db.t2.small | 1   | Deployed in zone2 for high availability and disaster recovery |
 | SQL Backup Retention      | Backup retention for SQL cluster         | N/A         | 1   | Backups retained for 5 days, accessible for recovery          |
 
 ### Descriptions
